@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Code Coverage') {
           steps {
-            jacoco changeBuildStatus: true, maximumLineCoverage: '50'
+            jacoco changeBuildStatus: true, maximumLineCoverage: '25'
           }
         }
     }
